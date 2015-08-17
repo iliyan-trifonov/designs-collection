@@ -1,0 +1,20 @@
+{
+  "name": "page-header1",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A simple page header created with HTML and CSS + some JavaScript(jQuery) to simulate menu/page changes",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Iliyan Trifonov",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "gulp-clean": "^0.3.1"
+  }
+}
