@@ -4,3 +4,5 @@ Ideas about semantic HTML and CSS/SCSS blocks of code that are like best practic
 
 ### Current Projects
 [Page Header 1](page-header1/ "Page Header 1") - a main page header with a menu
+
+<img src="page-header1/screenshot.png" alt="Page Header 1 Screenshot" style="width: 640px" width="640" />

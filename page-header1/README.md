@@ -8,6 +8,10 @@ SASS is used for the CSS and common variables are configurable.
 A sample main content is added to show how the header is integrated with the page. A small 
 JavaScript/[jQuery](https://jquery.com/) code is used on page load and menu button click to simulate content change.
 
+<img src="screenshot.png" alt="Page Header 1 Screenshot" style="width: 640px" width="640" />
+
+[See it in action here](https://designs-collection.iliyan-trifonov.com/page-header1/ "Page Header 1").
+
 ### Install
 
 You need [npm](https://www.npmjs.com), [gulp](http://gulpjs.com/) and jQuery to work with this project:
