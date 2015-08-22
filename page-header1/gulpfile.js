@@ -8,19 +8,19 @@ gulp.task('default', ['build', 'watch']);
 
 gulp.task('build', ['clean', 'copy', 'sass']);
 
-gulp.task('copy', function () {
-    gulp.src('./node_modules/jquery/dist/jquery.min.js')
+gulp.task('copy', ['clean'], function () {
+    return gulp.src('./node_modules/jquery/dist/jquery.min.js')
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('sass', function () {
-    gulp.src('./*.scss')
+gulp.task('sass', ['copy'], function () {
+    return gulp.src('./*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./'));
 });
 
 gulp.task('clean', function () {
-    gulp.src(['./main.css', './jquery.min.js'])
+    return gulp.src(['./main.css', './jquery.min.js'])
         .pipe(clean());
 });
 
