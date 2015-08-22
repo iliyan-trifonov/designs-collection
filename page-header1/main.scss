@@ -16,9 +16,14 @@ html, body {
   height: 100%;
 }
 
+html {
+    font-size: 16px;
+}
+
 /*set the default font on body as wel as a relative position for the main later*/
 body {
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
   position: relative;
 }
 
@@ -34,12 +39,8 @@ section h1 {
 
 /*set a default p behaviour*/
 p {
+  font-size: 16px;
   margin: 15px 0;
-}
-
-/*set a default em behaviour*/
-em {
-  font-style: italic;
 }
 
 /*the header*/
@@ -47,18 +48,25 @@ header {
   background-color: $header-bg-color;
   color: white;
   height: $header-height;
+  position: relative;
 
   /*the page title in the center of the header*/
   h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
   }
 
   /*the main site navigation*/
   nav {
-    /*put the links on right with a little right padding*/
-    text-align: right;
-    padding-right: 100px;
+    /*put the links on right with a little right padding*/      
+    position: absolute;
+    bottom: 0;
+    right: 100px;
 
     /*remove the list dot*/
     ul {
@@ -67,30 +75,34 @@ header {
 
     /*make the list items inline*/
     li {
-      display: inline;
+      display: inline-block;
 
       /*set an active page button design*/
       &.active a {
         /*border-bottom: 1px solid beige;*/
         background-color: beige;
         color: brown;
+          
+        &:hover {
+            padding-top: 10px;
+        }
       }
 
       /*the main page button design*/
       a {
-        display: inline;
+        display: inline-block;
         background-color: #afafa0;
         color: black;
         text-decoration: none;
-        padding: 9px;
+        padding: 10px;
         border: 1px solid white;
-        /*border-bottom: 1px solid $header-bg-color;*/
         border-bottom: 0;
         border-radius: 3px 3px 0 0;
+        font-size: 16px;
 
         /*some visual feedback on hover*/
         &:hover {
-          padding-top: 12px;
+          padding-top: 14px;
         }
       }
       
@@ -119,4 +131,30 @@ main {
   section {
     padding: 20px;
   }
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        nav {
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 728px) {
+    header {
+        h1 {
+            text-align: left;
+            padding-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    header {
+        h1 {
+            text-align: center;
+            padding-top: 0;
+        }
+    }
 }
