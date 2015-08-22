@@ -1,0 +1,20 @@
+{
+  "name": "books-list",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A list of books with a header and a side menu",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Iliyan Trifonov",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-sass": "^2.0.4",
+    "normalize.css": "^3.0.3"
+  }
+}

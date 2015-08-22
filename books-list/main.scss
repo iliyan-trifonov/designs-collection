@@ -1,0 +1,211 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 20px;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: auto;
+}
+
+header {
+  h1 {
+    margin: 0;
+  }
+}
+
+nav {
+  background: #cccccc;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+
+  ul {
+    list-style-type: none;
+    padding: 10px;
+
+    li {
+      display: inline;
+
+      &::after {
+        content: ' / ';
+      }
+      &:last-child::after {
+        content: none;
+      }
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-shadow: 1px 2px 4px #000;
+        }
+      }
+    }
+  }
+}
+
+.contents {
+  /*position against the sidebar*/
+  width: auto;
+  overflow: hidden;
+
+  .favorites {
+    /*padding: 0 20px 0 20px;*/
+  }
+
+  h1 {
+    font-size: 22px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3px;
+  }
+}
+
+article {
+  padding-bottom: 30px;
+  margin-left: 10px;
+
+  .clear {
+    clear: both;
+  }
+
+  section {
+    /*make it flexible*/
+    overflow: hidden;
+  }
+
+  $img-width: 120px;
+  $img-padding: 2px;
+
+  figure {
+    float: left;
+    /*let's keep the figure in sync with the img dims*/
+    width: $img-width + 2 * $img-padding;
+    margin: 0 20px 0 0;
+    text-align: center;
+
+    img {
+      width: $img-width;
+      height: 150px;
+      padding: $img-padding;
+      box-shadow: 1px 2px 8px #000;
+    }
+
+    figcaption {
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+
+  /*too much specificity from `.contents h1`: change it there and here*/
+  .contents & header {
+    h1 {
+      font-size: 16px;
+      border-bottom: none;
+      padding-bottom: 0;
+      margin: 0;
+    }
+  }
+
+  aside {
+    p {
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+
+  main p {
+    text-align: justify;
+  }
+}
+
+.genres {
+  list-style-type: none;
+  padding: 5px;
+
+  span {
+    font-size: 11px;
+    background-color: #5050cc;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 15px 3px 15px;
+    box-shadow: 1px 2px 4px #000;
+  }
+
+  li {
+    display: inline-block;
+    padding: 3px;
+  }
+
+  a {
+    font-size: 11px;
+    background-color: #5050cc;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 15px 3px 15px;
+    box-shadow: 1px 2px 4px #000;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sidebar {
+  float: right;
+  background-color: beige;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 200px;
+  padding: 15px;
+  margin-left: 20px;
+  /*full height*/
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
+  h1 {
+    border-bottom: 1px solid dimgrey;
+  }
+
+  .search {
+    width: 100%;
+
+    p {
+      border: 1px solid #fff;
+    }
+
+    input[type=search] {
+      width: 129px;
+      padding: 4px;
+      margin: 0;
+      float: left;
+      border: none;
+    }
+
+    a {
+      background-color: brown;
+      color: white;
+      text-decoration: none;
+      margin: 0;
+      display: inline-block;
+      height: 26px;
+      width: 31px;
+      text-align: center;
+      line-height: 23px;
+      border: none;
+    }
+
+  }
+}
+
+/*footer {
+  background-color: #cccccc;
+  border-radius: 5px;
+  padding: 1px;
+  p {
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}*/
