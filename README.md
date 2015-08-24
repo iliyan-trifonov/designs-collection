@@ -10,3 +10,8 @@ Ideas about semantic HTML and CSS/SCSS blocks of code that are like best practic
 [Books List](books-list/ "Books List") - a whole front page showing a list of books with header and a sidebar.
 
 <img src="books-list/screenshot.png" alt="Books List Screenshot" style="width: 640px" width="640" />
+
+[Responsive Boxes](responsive-boxes/ "Responsive Boxes") - Responsive page design with divs as boxes, floated and 
+taking the full height. Autoexpanding from their content. Auto rearranged by the window size.
+
+<img src="responsive-boxes/screenshot.png" alt="Responsive Boxes Screenshot" style="width: 640px" width="640" />
