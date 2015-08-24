@@ -1,7 +1,5 @@
 node_modules/
 .idea/
-page-header1/jquery.min.js
-page-header1/main.css
-books-list/node_modules
-books-list/main.css
-books-list/bundle.css
+jquery.min.js
+main.css
+bundle.css
